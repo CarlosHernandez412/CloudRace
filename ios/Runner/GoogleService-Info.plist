@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>762474135665-rqk6ga5pgs00o33e1h17egtl4p07b83r.apps.googleusercontent.com</string>
+	<string>885259573664-mb5f3p626i9rli7a6ldrauktdi7ehcdt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.762474135665-rqk6ga5pgs00o33e1h17egtl4p07b83r</string>
+	<string>com.googleusercontent.apps.885259573664-mb5f3p626i9rli7a6ldrauktdi7ehcdt</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCzz4jyWVSp7o5utHEvKLRSY1BNZ7RaI-o</string>
+	<string>AIzaSyAcFpvJ6dVeIT2ntez3vAthHtOH5IIHTkE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>762474135665</string>
+	<string>885259573664</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.cloudRace</string>
+	<string>com.CloudRace.cloudRace</string>
 	<key>PROJECT_ID</key>
-	<string>cloud-race-36abb</string>
+	<string>cloud-race-f22fc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cloud-race-36abb.appspot.com</string>
+	<string>cloud-race-f22fc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:762474135665:ios:c077c2e523e69438891bd0</string>
+	<string>1:885259573664:ios:eaa5042f7ff7f2d3146cc5</string>
 </dict>
 </plist>
