@@ -14,19 +14,47 @@ class Screen3 extends StatelessWidget {
       ),
       backgroundColor: Colors.lightBlue[100],
       body: Center(
-        child: RaisedButton(
-          color: Colors.green,
-          child: Text('Enter waiting room'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return Screen4();
-                },
-              ),
-            );
-          },
+        child: Column(
+          children: <Widget>[
+            Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    contentPadding: EdgeInsets.all(10.0),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      borderSide: BorderSide(),
+                    ),
+                    hintText: 'Enter Name',
+                  ),
+                )),
+            Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    contentPadding: EdgeInsets.all(10.0),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      borderSide: BorderSide(),
+                    ),
+                    hintText: 'Enter gamecode',
+                  ),
+                )),
+            RaisedButton(
+              color: Colors.green,
+              child: Text('Join game'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return Screen4();
+                    },
+                  ),
+                );
+              },
+            ),
+          ],
         ),
       ),
     );
