@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Screen5.dart';
+import 'Screen6.dart';
 
-// Host enters their name, selects a quiz, and can start the quiz button
-// Later - Be able to view those in waiting room
+// The Quiz - Quiz Questions page
 
-class Screen2 extends StatelessWidget {
+class Screen5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,13 +14,13 @@ class Screen2 extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           color: Colors.green,
-          child: Text('Start Quiz'),
+          child: Text('Navigate to the end page'),
           onPressed: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Screen5();
+                  return Screen6();
                 },
               ),
             );
