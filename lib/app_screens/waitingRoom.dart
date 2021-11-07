@@ -1,26 +1,28 @@
+import 'package:cloud_race/app_screens/results.dart';
 import 'package:flutter/material.dart';
-import 'Screen6.dart';
+import 'quizQues.dart';
 
-// The Quiz - Quiz Questions page
+// Waiting room, no button just a loading waiting room
 
-class Screen5 extends StatelessWidget {
+class Screen4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.grey[900],
         title: Text('Cloud Race'),
       ),
+      backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: RaisedButton(
           color: Colors.green,
-          child: Text('Navigate to the end page'),
+          child: Text('Waiting for host to start...'),
           onPressed: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Screen6();
+                  return Screen5();
                 },
               ),
             );

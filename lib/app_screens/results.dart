@@ -1,7 +1,7 @@
-import 'package:cloud_race/app_screens/Screen5.dart';
+import 'package:cloud_race/app_screens/quizQues.dart';
 import 'package:flutter/material.dart';
-import 'Screen5.dart';
-import 'Screen1.dart';
+import 'quizQues.dart';
+import 'homeScreen.dart';
 
 // End Page - Results
 
@@ -10,9 +10,10 @@ class Screen6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.grey[900],
         title: Text('Cloud Race'),
       ),
+      backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: Column(
           children: <Widget>[

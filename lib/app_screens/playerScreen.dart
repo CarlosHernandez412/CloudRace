@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Screen4.dart';
+import 'waitingRoom.dart';
 
 // Users joining a game will enter their name and
 // enter gamecode then submit to enter waiting room
@@ -9,9 +9,10 @@ class Screen3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.grey[900],
         title: Text('Cloud Race'),
       ),
+      backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: RaisedButton(
           color: Colors.green,

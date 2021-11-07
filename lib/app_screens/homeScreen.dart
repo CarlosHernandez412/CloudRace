@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screen2.dart';
-import 'Screen3.dart';
+import 'hostPage.dart';
+import 'playerScreen.dart';
 
 // Homescreen where users can host/join a quiz
 
@@ -9,14 +9,21 @@ class Screen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.grey[900],
         title: Text('Cloud Race'),
       ),
+      backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: Column(
           children: <Widget>[
+            Spacer(),
+            Text(
+              "Let's Play Trivia",
+              style: Theme.of(context).textTheme.headline4!.copyWith(
+                color: Colors.black, fontWeight: FontWeight.bold),
+            ),
             RaisedButton(
-              color: Colors.green,
+              color: Colors.lightGreen,
               child: Text('Host Quiz'),
               onPressed: () {
                 Navigator.push(
@@ -30,7 +37,7 @@ class Screen1 extends StatelessWidget {
               },
             ),
             RaisedButton(
-              color: Colors.blue,
+              color: Colors.yellow,
               child: Text('Join Quiz'),
               onPressed: () {
                 Navigator.push(
@@ -43,6 +50,7 @@ class Screen1 extends StatelessWidget {
                 );
               },
             ),
+
           ],
         ),
       ),
