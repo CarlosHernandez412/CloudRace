@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Screen2.dart';
-import 'Screen1.dart';
+import 'Screen4.dart';
 
-//End Page
+// Users joining a game will enter their name and
+// enter gamecode then submit to enter waiting room
 
 class Screen3 extends StatelessWidget {
   @override
@@ -13,37 +13,19 @@ class Screen3 extends StatelessWidget {
         title: Text('Cloud Race'),
       ),
       body: Center(
-        child: Column(
-          children: <Widget>[
-            RaisedButton(
-              color: Colors.green,
-              child: Text('Play Again'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return Screen2();
-                    },
-                  ),
-                );
-              },
-            ),
-            RaisedButton(
-              color: Colors.red,
-              child: Text('Quit'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return Screen1();
-                    },
-                  ),
-                );
-              },
-            ),
-          ],
+        child: RaisedButton(
+          color: Colors.green,
+          child: Text('Enter waiting room'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return Screen4();
+                },
+              ),
+            );
+          },
         ),
       ),
     );

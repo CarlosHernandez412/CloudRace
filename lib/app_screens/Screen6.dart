@@ -1,10 +1,11 @@
+import 'package:cloud_race/app_screens/Screen5.dart';
 import 'package:flutter/material.dart';
-import 'Screen2.dart';
-import 'Screen3.dart';
+import 'Screen5.dart';
+import 'Screen1.dart';
 
-// Homescreen where users can host/join a quiz
+// End Page - Results
 
-class Screen1 extends StatelessWidget {
+class Screen6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,27 +18,27 @@ class Screen1 extends StatelessWidget {
           children: <Widget>[
             RaisedButton(
               color: Colors.green,
-              child: Text('Host Quiz'),
+              child: Text('Play Again'),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen2();
+                      return Screen5();
                     },
                   ),
                 );
               },
             ),
             RaisedButton(
-              color: Colors.blue,
-              child: Text('Join Quiz'),
+              color: Colors.red,
+              child: Text('Quit'),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen3();
+                      return Screen1();
                     },
                   ),
                 );
