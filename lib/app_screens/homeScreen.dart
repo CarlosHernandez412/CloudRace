@@ -4,7 +4,7 @@ import 'playerScreen.dart';
 
 // Homescreen where users can host/join a quiz
 
-class Screen1 extends StatelessWidget {
+class homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class Screen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Image.asset("web/quiz_background.jpeg"),
+            //Image.asset("web/quiz_background.jpeg"),
             Spacer(),
             Text(
               "Let's Play Trivia",
@@ -26,6 +26,7 @@ class Screen1 extends StatelessWidget {
                   .headline4!
                   .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
             ),
+            Spacer(),
             RaisedButton(
               color: Colors.lightGreen,
               child: Text('Host Quiz'),
@@ -34,12 +35,13 @@ class Screen1 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen2();
+                      return hostPage();
                     },
                   ),
                 );
               },
             ),
+            Spacer(),
             RaisedButton(
               color: Colors.yellow,
               child: Text('Join Quiz'),
@@ -48,12 +50,13 @@ class Screen1 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen3();
+                      return playerScreen();
                     },
                   ),
                 );
               },
             ),
+            Spacer(),
           ],
         ),
       ),
