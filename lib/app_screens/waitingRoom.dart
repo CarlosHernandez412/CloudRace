@@ -4,7 +4,7 @@ import 'quizQues.dart';
 
 // Waiting room, no button just a loading waiting room
 
-class Screen4 extends StatelessWidget {
+class waitingRoom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class Screen4 extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Screen5();
+                  return questions();
                 },
               ),
             );

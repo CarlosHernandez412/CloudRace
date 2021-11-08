@@ -4,7 +4,7 @@ import 'waitingRoom.dart';
 // Users joining a game will enter their name and
 // enter gamecode then submit to enter waiting room
 
-class Screen3 extends StatelessWidget {
+class playerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +48,7 @@ class Screen3 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen4();
+                      return waitingRoom();
                     },
                   ),
                 );

@@ -5,7 +5,7 @@ import 'homeScreen.dart';
 
 // End Page - Results
 
-class Screen6 extends StatelessWidget {
+class endPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +25,7 @@ class Screen6 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen5();
+                      return questions();
                     },
                   ),
                 );
@@ -39,7 +39,7 @@ class Screen6 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen1();
+                      return homescreen();
                     },
                   ),
                 );
