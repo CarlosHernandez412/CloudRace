@@ -15,7 +15,9 @@ class Screen1 extends StatelessWidget {
       backgroundColor: Colors.lightBlue[100],
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            Image.asset("web/quiz_background.jpeg"),
             Spacer(),
             Text(
               "Let's Play Trivia",
