@@ -10,7 +10,7 @@ class Screen1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey[900],
-        title: Text('Cloud Race'),
+        title: Text('Cloud Race', textAlign: TextAlign.center),
       ),
       backgroundColor: Colors.lightBlue[100],
       body: Center(
@@ -19,8 +19,10 @@ class Screen1 extends StatelessWidget {
             Spacer(),
             Text(
               "Let's Play Trivia",
-              style: Theme.of(context).textTheme.headline4!.copyWith(
-                color: Colors.black, fontWeight: FontWeight.bold),
+              style: Theme.of(context)
+                  .textTheme
+                  .headline4!
+                  .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
             ),
             RaisedButton(
               color: Colors.lightGreen,
@@ -50,7 +52,6 @@ class Screen1 extends StatelessWidget {
                 );
               },
             ),
-
           ],
         ),
       ),
