@@ -28,7 +28,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
-    sdk: flutter
+    sdk: flutter  
   firebase_core: ^1.8.0
   firebase_database: ^8.0.1
   flutter_lints: ^1.0.0
@@ -58,6 +58,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  assets:     
+    - assets/images/
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
