@@ -5,7 +5,7 @@ import 'quizQues.dart';
 // Host enters their name, selects a quiz, and can start the quiz button
 // Later - Be able to view those in waiting room
 
-class Screen2 extends StatelessWidget {
+class hostPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +37,7 @@ class Screen2 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return Screen5();
+                      return questions();
                     },
                   ),
                 );
