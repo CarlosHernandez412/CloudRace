@@ -6,6 +6,12 @@ class DatabaseService {
   getQuizData() async {
     return await FirebaseFirestore.instance
         .collection("Categories")
-        .snapshots();
+        .get()
+        .then((QuerySnapshot querySnapshot) {
+      print(querySnapshot.docs);
+      querySnapshot.docs.forEach((doc) {
+        print(doc.data());
+      });
+    });
   }
 }

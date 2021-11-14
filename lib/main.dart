@@ -5,6 +5,7 @@ import 'package:cloud_race/app_screens/hostPage.dart';
 import 'package:cloud_race/app_screens/LoadingScreen.dart';
 import './app_screens/homeScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_race/services/database.dart';
 
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
@@ -36,7 +37,8 @@ class MyHomePage extends StatelessWidget {
           }
 
           if (snapshot.connectionState == ConnectionState.done) {
-            print('Connection Ready');
+            print("test");
+            DatabaseService().getQuizData();
             return HomeScreen();
           }
 
