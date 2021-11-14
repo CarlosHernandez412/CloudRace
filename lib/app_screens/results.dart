@@ -39,7 +39,7 @@ class endPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return homescreen();
+                      return HomeScreen();
                     },
                   ),
                 );

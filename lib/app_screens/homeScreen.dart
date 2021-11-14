@@ -4,7 +4,7 @@ import 'playerScreen.dart';
 
 // Homescreen where users can host/join a quiz
 
-class homescreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

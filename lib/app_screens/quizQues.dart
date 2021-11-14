@@ -4,9 +4,7 @@ import 'results.dart';
 
 // The Quiz - Quiz Questions page
 
-
 class questions extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,13 +20,13 @@ class questions extends StatelessWidget {
             RaisedButton(
               color: Colors.green,
               child: Text('Navigate to the endPage'),
-              onPressed: () { 
+              onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context){
-                    return endPage();
-                  },
+                    builder: (context) {
+                      return endPage();
+                    },
                   ),
                 );
               },
