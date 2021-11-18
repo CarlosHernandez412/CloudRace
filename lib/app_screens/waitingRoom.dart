@@ -1,6 +1,7 @@
-import 'package:cloud_race/app_screens/results.dart';
+import 'package:cloud_race/app_screens/result.dart';
 import 'package:flutter/material.dart';
-import 'quizQues.dart';
+import 'quiz.dart';
+import 'question.dart';
 
 // Waiting room, no button just a loading waiting room
 
@@ -22,7 +23,7 @@ class waitingRoom extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return questions();
+                  return MaterialApp(); //quiz();
                 },
               ),
             );

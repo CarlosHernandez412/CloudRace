@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:cloud_race/services/database.dart';
-import 'quizQues.dart';
+//import 'package:cloud_race/services/database.dart';
+import 'quiz.dart';
+import 'question.dart';
 
 // Host enters their name, selects a quiz, and can start the quiz button
 // Later - Be able to view those in waiting room
@@ -37,7 +38,7 @@ class hostPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return questions();
+                      return MaterialApp(); //question();
                     },
                   ),
                 );
